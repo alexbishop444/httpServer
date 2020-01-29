@@ -1,0 +1,5 @@
+echo "Building image for Tests"
+docker build -f Dockerfile.test -t rebs-webapp:latest .
+
+echo "Running Tests..."
+docker run --rm rebs-webapp:latest
