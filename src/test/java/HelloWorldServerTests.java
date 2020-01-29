@@ -37,10 +37,6 @@ public class HelloWorldServerTests {
 
         }
     }
-    @Test
-    public void failtest() {
-        Assert.assertEquals(12,10);
-    }
 
 
 }

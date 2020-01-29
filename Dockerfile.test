@@ -1,0 +1,5 @@
+FROM gradle:jdk11
+
+COPY . /home/gradle
+
+CMD ["./gradlew", "check"]
