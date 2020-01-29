@@ -1,3 +1,7 @@
+#steps:
+#  - command: "docker build -f Dockerfile.test . -t httpservertests\nDocker run httpservertests"
+#    label: "Run Tests"
+
 steps:
-  - command: "docker build -f Dockerfile.test . -t httpservertests\nDocker run httpservertests"
-    label: "Run Tests"
+  - label: ":hammer: Tests"
+    command: Ops/test
