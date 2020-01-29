@@ -1,3 +1,5 @@
 steps:
   - command: "docker build -f Dockerfile.test . -t httpservertests\nDocker run httpservertests"
     label: "Run Tests"
+    agent:
+      queue: "fma-dev-dflt"
